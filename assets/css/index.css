@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'PSL-EmpireExtra';
+  src: url('../fonts/PSL-EmpireExtra-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page-body {
+  font-family: 'PSL-EmpireExtra';
+  overflow-x: hidden;
+  background-color: #9B9B9B;
+}
+
+.bg-main {
+  background-color: #B72027;
+}
+
+.logo-container {
+  /* position: absolute;
+  z-index: 9;
+  top: -18px;
+  left: 50%;
+  margin: 0 auto; */
+  position: absolute;
+  margin: auto;
+  top: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.font15 {
+  font-size: 1.5rem;
+}
+.p-menu {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+header>img {
+  width: 100%;
+}
+
+.main-content {
+  background-image: url('../img/top-bg-main.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.check-huay {
+  background-image: linear-gradient(#000000, #545454);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 3px solid #B72027;
+}
+
+.check-huay-btn {
+  width: 50%;
+  border-radius: 50px;
+  color: white;
+  background-image: linear-gradient(#B10000, #A20000, #FF0000,#BB0000,#A70000);
+}
+
+.copyrigth {
+  padding: 10px 0;
+  background-color: #2E2E2E;
+}
+
+.copyrigth>span {
+  font-size: 1.5rem;
+}
+
+.footer-main {
+  border-top: 3px solid #FFDF80;
+  background-color: #940C12;
+}
