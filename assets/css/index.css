@@ -5,11 +5,15 @@
   font-style: normal;
 }
 
+.row {
+  /* --bs-gutter-x: 0; */
+}
+
 .page-body {
   font-family: 'PSL-EmpireExtra';
   overflow-x: hidden;
   background-color: #9B9B9B;
-  margin-right: -10px;
+  /* margin-right: -10px; */
 }
 
 .bg-main {
@@ -123,6 +127,9 @@ header>img {
 .footer-menu {
   font-size: 1.3rem;
 }
+.footer-content {
+  font-size: 1.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-menu {
     padding-left: .5rem !important;
@@ -164,5 +171,8 @@ header>img {
 
   .col-none {
     display: none;
+  }
+  .footer-content {
+    font-size: 1rem;
   }
 }
