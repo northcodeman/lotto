@@ -23,14 +23,8 @@
     <img src="assets/img/logo.png" alt="" style="max-width: 15%;">
   </div>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-main">
+  <nav class="navbar navbar-expand-md bg-main nav-web">
     <div class="container">
-      <!-- <a class="navbar-brand" href="#">Container</a> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07"
-        aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -56,11 +50,55 @@
               <a class="nav-link font15 p-menu dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
                 aria-expanded="false">ภาษาไทย</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown07">
-                <li><a class="dropdown-item font15" href="#">ภาษาไทย</a></li>
-                <li><a class="dropdown-item font15" href="#">English</a></li>
+                <li><a class="dropdown-item font15 text-white" href="#">ภาษาไทย</a></li>
+                <li><a class="dropdown-item font15 text-white" href="#">English</a></li>
               </ul>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar bg-main nav-mobile">
+    <button class="navbar-toggler ml-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">☰</span>
+    </button>
+    <div class="dropdown" style="margin-right: 20px;">
+          <a class="nav-link p-menu dropdown-toggle font15" href="#" id="dropdown02" data-bs-toggle="dropdown"
+            aria-expanded="false">ภาษาไทย</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdown02">
+            <li><a class="dropdown-item font15 text-white" href="#">ภาษาไทย</a></li>
+            <li><a class="dropdown-item font15 text-white" href="#">English</a></li>
+          </ul>
+    </div>
+    <div class="collapse bg-web w-100" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7">
+            <!-- <h4 class="text-white"></h4> -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link font15 p-menu" href="#">หน้าแรก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font15 p-menu" href="#">ตรวจหวย</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font15 p-menu" href="#">หวยไทย</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 offset-md-1">
+            <!-- <h4 class="text-white">Contact</h4> -->
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link font15 p-menu" href="#">หวยนอกประเทศ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font15 p-menu" href="#">วิธีการใช้</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -77,22 +115,22 @@
   <main class="main-content">
     <img src="assets/img/blush.png" alt="" class="mb-5" style="margin-top: -15px; width: 100%;">
 
-    <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-3 d-flex justify-content-center">
-        <img src="assets/img/box.png" alt="" class="w-75">
+    <div class="row d-flex justify-content-center">
+      <div class="col-4 col-sm-3 d-flex justify-content-center">
+        <img src="assets/img/box.png" alt="" class="lotto-today">
       </div>
-      <div class="col-3 d-flex justify-content-center">
-        <img src="assets/img/box.png" alt="" class="w-75">
+      <div class="col-4 col-sm-3 d-flex justify-content-center">
+        <img src="assets/img/box.png" alt="" class="lotto-today">
       </div>
-      <div class="col-3 d-flex justify-content-center">
-        <img src="assets/img/box.png" alt="" class="w-75">
+      <div class="col-4 col-sm-3 d-flex justify-content-center">
+        <img src="assets/img/box.png" alt="" class="lotto-today">
       </div>
     </div>
 
     <div class="container">
 
-      <div class="row d-flex justify-content-center align-items-center mt-3">
-        <div class="col-lg-4 col-sm-6 check-huay">
+      <div class="row mt-3 d-flex justify-content-center">
+        <div class="col-6 col-sm-4 check-huay">
           <h3 class="text-white">ตรวจหวย <span style="color: #FF0000;">ลาวVIP</span></h3>
           <form action="" class="my-2" style="width: 80%; margin: 0 auto;">
             <input type="text" placeholder="กรอกเลขหวย" style="border-radius: 50px; text-align: center; width: 100%;">
@@ -119,10 +157,10 @@
     <footer class="text-white footer-main">
       <div class="container py-2">
         <div class="row">
-          <div class="col-2">
+          <div class="col-3 col-sm-2">
             <img src="assets/img/logo-1.png" alt="" style="width: 100%;">
           </div>
-          <div class="col-8">
+          <div class="col-6 col-sm-8">
             <h3 class="mb-1 mt-2" style="color: #FFDF80;">w w w . มี ทุ ก ห ว ย . c o m</h3>
             <p class="mb-0">&emsp;&emsp;&emsp;เราได้รวมหวยทุกประเภทไว้ที่นี้ที่เดียวเพื่อให้
               ผู้ใช้งานได้ดูและใช้อย่างมีประสิทธิภาพที่สุด ทั้งสลากกินแบ่งรัฐบาล สลากกินแบ่งต่างๆที่อยู่ในไทย
@@ -130,13 +168,15 @@
               ออกผลไวกว่าที่อื่นแน่นอนไม่ต้องไปรอให้เสียเวลาหรือเข้าหลายที่
               สำหรับผู้ที่ชื่นชอบ หรือนักลุ้นทั้งหลาย</p>
           </div>
-          <div class="col-2 d-flex flex-column">
-            <h4 style="border-bottom: 3px solid #FFDF80; width: fit-content;">เมนู</h4>
-            <a class="nav-link p-0" href="#">หน้าแรก</a>
-            <a class="nav-link p-0" href="#">ตรวจหวย</a>
-            <a class="nav-link p-0" href="#">หวยไทย</a>
-            <a class="nav-link p-0" href="#">หวยนอกประเทศ</a>
-            <a class="nav-link p-0" href="#">วิธีการใช้</a>
+          <div class="col-3 col-sm-2">
+            <div class="d-flex flex-column">
+              <h4 style="border-bottom: 3px solid #FFDF80; width: fit-content;">เมนู</h4>
+              <a class="nav-link p-0" href="#">หน้าแรก</a>
+              <a class="nav-link p-0" href="#">ตรวจหวย</a>
+              <a class="nav-link p-0" href="#">หวยไทย</a>
+              <a class="nav-link p-0" href="#">หวยนอกประเทศ</a>
+              <a class="nav-link p-0" href="#">วิธีการใช้</a>
+            </div>
           </div>
         </div>
       </div>
