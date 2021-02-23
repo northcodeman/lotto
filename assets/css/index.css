@@ -109,19 +109,20 @@ header>img {
 }
 
 .copyrigth {
-  padding: 10px 0;
   background-color: #2E2E2E;
 }
 
 .copyrigth>span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .footer-main {
   border-top: 3px solid #FFDF80;
   background-color: #940C12;
 }
-
+.footer-menu {
+  font-size: 1.3rem;
+}
 @media screen and (min-width: 768px) {
   .p-menu {
     padding-left: .5rem !important;
@@ -159,5 +160,9 @@ header>img {
 
   .lotto-today {
     width: 90%;
+  }
+
+  .col-none {
+    display: none;
   }
 }
