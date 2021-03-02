@@ -72,10 +72,10 @@
               <li><a class="dropdown-item font15 text-white" href="#">-หุ้นรัสเซีย</a></li>
               <li><a class="dropdown-item font15 text-white" href="#">-หุ้นอินเดีย</a></li>
               <li><a class="dropdown-item font15 text-white" href="#">-หุ้นดาวโจนส์</a></li>
-              <li><a class="font15 text-white" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
-              <li><a class="font15 text-white" href="result-huay/huay-lao.php">-หวยลาว</a></li>
-              <li><a class="font15 text-white" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
-              <li><a class="font15 text-white" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
+              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
+              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-lao.php">-หวยลาว</a></li>
+              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
+              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
             </ul>
           </li>
           <li class="nav-item">
