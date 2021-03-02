@@ -15,7 +15,7 @@
           <div class="col-none col-sm-2">
             <div class="d-flex flex-column">
               <h4 style="border-bottom: 3px solid #FFDF80; width: fit-content;">เมนู</h4>
-              <a class="nav-link p-0 footer-menu" href="#">หน้าแรก</a>
+              <a class="nav-link p-0 footer-menu" href="index.php">หน้าแรก</a>
               <a class="nav-link p-0 footer-menu" href="#">ตรวจหวย</a>
               <a class="nav-link p-0 footer-menu" href="#">หวยไทย</a>
               <a class="nav-link p-0 footer-menu" href="#">หวยนอกประเทศ</a>

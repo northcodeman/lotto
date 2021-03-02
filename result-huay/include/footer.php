@@ -2,7 +2,7 @@
       <div class="container py-2">
         <div class="row" style="--bs-gutter-x: 0;">
           <div class="col-3 col-sm-2">
-            <img src="assets/img/logo-1.png" alt="" style="width: 100%;">
+            <img src="../assets/img/logo-1.png" alt="" style="width: 100%;">
           </div>
           <div class="col-9 col-sm-8">
             <h3 class="mb-1 mt-2" style="color: #FFDF80;">w w w . มี ทุ ก ห ว ย . c o m</h3>
@@ -32,20 +32,20 @@
   </main>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap -->
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 
   <!-- Plugins JS(1.jQuery, 2.Popper, 3.Bootstrap, 4.FontAwesome, 6.Waypoints, 7.Owl Carousel) -->
-	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<!-- <script src="assets/js/jquery-3.4.1.min.js"></script> -->
 	<!-- <script src="masterpiece/assets/script/popper.min.js"></script> -->
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
 	<!-- <script src="assets/js/fontawesome.min.js"></script> -->
 	<!-- <script src="masterpiece/assets/script/jquery.waypoints.min.js"></script> -->
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/home.js"></script>
-	<script src="assets/js/custom-nav.js"></script>
+	<script src="../assets/js/owl.carousel.min.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/home.js"></script>
+	<script src="../assets/js/custom-nav.js"></script>
 
 </body>
 

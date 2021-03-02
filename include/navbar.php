@@ -12,7 +12,7 @@
   <link href="assets/css/index.css" rel="stylesheet">
   
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-	<link rel="stylesheet" href="masterpiece/assets/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="masterpiece/assets/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link font15 p-menu" href="#" style="z-index: 99;">หน้าแรก</a>
+            <a class="nav-link font15 p-menu" href="index.php" style="z-index: 99;">หน้าแรก</a>
           </li>
           <li class="nav-item">
             <a class="nav-link font15 p-menu" href="#" style="z-index: 99;">ตรวจหวย</a>
@@ -44,7 +44,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link font15 p-menu dropdown-toggle" href="#" id="thaiLotto" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 99;">หวยไทย</a>
             <ul class="dropdown-menu" aria-labelledby="thaiLotto">
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยรัฐบาล</a></li>
+              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-thai.php">-หวยรัฐบาล</a></li>
               <li><a class="dropdown-item font15 text-white" href="#">-หวยออมสิน</a></li>
               <li><a class="dropdown-item font15 text-white" href="#">-หวยธกส</a></li>
               <li><a class="dropdown-item font15 text-white" href="#">-หวยหุ้นไทย</a></li>
@@ -72,10 +72,10 @@
               <li><a class="dropdown-item font15 text-white" href="#">-หุ้นรัสเซีย</a></li>
               <li><a class="dropdown-item font15 text-white" href="#">-หุ้นอินเดีย</a></li>
               <li><a class="dropdown-item font15 text-white" href="#">-หุ้นดาวโจนส์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยมาเลย์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยลาว</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยเวียดนาม\/ฮานอย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
+              <li><a class="font15 text-white" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
+              <li><a class="font15 text-white" href="result-huay/huay-lao.php">-หวยลาว</a></li>
+              <li><a class="font15 text-white" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
+              <li><a class="font15 text-white" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -114,7 +114,7 @@
             <!-- <h4 class="text-white"></h4> -->
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link font15 p-menu" href="#">หน้าแรก</a>
+                <a class="nav-link font15 p-menu" href="index.php">หน้าแรก</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link font15 p-menu" href="#">ตรวจหวย</a>
@@ -124,7 +124,7 @@
                 aria-controls="thaiLottoM" aria-expanded="false">หวยไทย</a>
                  <div class="collapse" id="thaiLottoM">
                   <ul>
-                    <li><a class="font15 text-white" href="#">-หวยรัฐบาล</a></li>
+                    <li><a class="font15 text-white" href="result-huay/huay-thai.php">-หวยรัฐบาล</a></li>
                     <li><a class="font15 text-white" href="#">-หวยออมสิน</a></li>
                     <li><a class="font15 text-white" href="#">-หวยธกส</a></li>
                     <li><a class="font15 text-white" href="#">-หวยหุ้นไทย</a></li>
@@ -156,10 +156,10 @@
                     <li><a class="font15 text-white" href="#">-หุ้นรัสเซีย</a></li>
                     <li><a class="font15 text-white" href="#">-หุ้นอินเดีย</a></li>
                     <li><a class="font15 text-white" href="#">-หุ้นดาวโจนส์</a></li>
-                    <li><a class="font15 text-white" href="#">-หวยมาเลย์</a></li>
-                    <li><a class="font15 text-white" href="#">-หวยลาว</a></li>
-                    <li><a class="font15 text-white" href="#">-หวยเวียดนาม\/ฮานอย</a></li>
-                    <li><a class="font15 text-white" href="#">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
+                    <li><a class="font15 text-white" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
+                    <li><a class="font15 text-white" href="result-huay/huay-lao.php">-หวยลาว</a></li>
+                    <li><a class="font15 text-white" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
+                    <li><a class="font15 text-white" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
                   </ul>
                 </div>
               </li>
