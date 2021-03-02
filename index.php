@@ -223,7 +223,7 @@ include("include/navbar.php")
   <section id="projects">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 col-md-12 cnt_head">
+				<div class="col-lg-10 offset-lg-1 col-md-12 cnt_head">
 					<h2 class="s_head">หวยหุ้นอัพเดท</h2>
 					<!-- <p class="h_body">รวมหวยหุ้นต่างๆ </p> -->
 					<div class="row" id="StockBtn">
@@ -236,7 +236,7 @@ include("include/navbar.php")
 		</div>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-10 offset-md-1">
+				<div class="col-lg-10 offset-lg-1">
 					<div class="owl-carousel owl-theme pr_cnt" id="cardSlide">
 						<center><h3>กำลังโหลดข้อมูล ...</h3></center>
 					</div>
