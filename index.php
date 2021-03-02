@@ -25,6 +25,17 @@ include("include/navbar.php")
     </div> -->
 <br>
     <div class="container">
+		<section>
+			<div class="row mt-3 d-flex justify-content-center" style="--bs-gutter-x: 0;">
+        <div class="col-12 col-sm-4 check-huay">
+          <h3 class="text-white">ตรวจหวย <span style="color: #FF0000;">ลาวVIP</span></h3>
+          <form action="" class="my-2" style="width: 80%; margin: 0 auto;">
+            <input type="number" placeholder="กรอกเลขหวย" style="border-radius: 50px; text-align: center; width: 100%;">
+          </form>
+          <button class="check-huay-btn">ยืนยัน</button>
+        </div>
+      </div>
+		</section>
 
     <section id="services" style="padding-top:50px ;">
 		<div class="container">

@@ -7,7 +7,7 @@ include("include/navbar.php")
 	<div class="container">
 		<div class="row">
 			<div class="col-1 d-none d-md-block"><br>
-				<img class="img-fluid" src="masterpiece/assets/images/flags/hanoi_flag.png" alt="" srcset="">
+				<img class="img-fluid" src="../assets/img/flags/hanoi_flag.png" alt="" srcset="">
 			</div>
 			<div class="col-11">
 				<h1>ผลหวยฮานอย <b class="text-danger">พิเศษ</b></h1>
