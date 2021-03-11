@@ -28,11 +28,30 @@ include("include/navbar.php")
 		<section>
 			<div class="row mt-3 d-flex justify-content-center" style="--bs-gutter-x: 0;">
         <div class="col-12 col-sm-4 check-huay">
-          <h3 class="text-white">ตรวจหวย <span style="color: #FF0000;">ลาวVIP</span></h3>
           <form action="" class="my-2" style="width: 80%; margin: 0 auto;">
-            <input type="number" placeholder="กรอกเลขหวย" style="border-radius: 50px; text-align: center; width: 100%;">
+					<h3 class="text-white text-center">ตรวจหวย<span>
+						<select id="huay-type" class="form-select form-select-sm" aria-label=".form-select-sm example"  style="color: #FF0000;">
+							<option selected value="หุ้นเกาหลี">หุ้นเกาหลี</option>
+							<option value="นิเคอิ รอบเช้า">นิเคอิรอบเช้า</option>
+							<option value="นิเคอิ รอบบ่าย">นิเคอิรอบบ่าย</option>
+							<option value="ฮั่งเส็ง รอบเช้า">ฮั่งเส็งรอบเช้า</option>
+							<option value="ฮั่งเส็ง รอบบ่าย">ฮั่งเส็งรอบบ่าย</option>
+							<option value="หุ้นจีน รอบเช้า">หุ้นจีนรอบเช้า</option>
+							<option value="หุ้นจีน รอบบ่าย">หุ้นจีนรอบบ่าย</option>
+							<option value="หุ้นไต้หวัน">หุ้นไต้หวัน</option>
+							<option value="หุ้นสิงคโปร์">หุ้นสิงคโปร์</option>
+							<option value="หุ้นสิงคโปร์ 4D">หุ้นสิงคโปร์4D</option>
+							<option value="หุ้นอียิปต์">หุ้นอียิปต์</option>
+							<option value="หุ้นเยอรมัน">หุ้นเยอรมัน</option>
+							<option value="หุ้นอังกฤษ">หุ้นอังกฤษ</option>
+							<option value="หุ้นรัสเซีย">หุ้นรัสเซีย</option>
+							<option value="หุ้นอินเดีย">หุ้นอินเดีย</option>
+							<option value="หุ้นดาวน์โจน">หุ้นดาวโจนส์</option>
+						</select>
+					</span></h3>
+					<input id="huay" type="text" placeholder="กรอกเลขหวย" maxlength="6" pattern="[0-9]*" style="border-radius: 50px; text-align: center; width: 100%;">
           </form>
-          <button class="check-huay-btn">ยืนยัน</button>
+          <button class="check-huay-btn" onclick="checkhuay()">ยืนยัน</button>
         </div>
       </div>
 		</section>
@@ -261,7 +280,21 @@ include("include/navbar.php")
       </div>
 
     </div>
-  
+
+		<div id="successModal" class="modal fade">
+			<div class="modal-dialog modal-sm modal-dialog-centered">
+					<div class="modal-content bg-dark text-light">
+							<div class="modal-header border-secondary">
+									<h4 id="successTitle" class="modal-title w-100"></h4>
+							</div>
+							<div id="successBody" class="modal-body">
+							</div>
+							<div class="modal-footer">
+									<button class="btn btn-success btn-block" data-dismiss="modal" onclick="closePopup()">ปิด</button>
+							</div>
+					</div>
+			</div>
+		</div>
     <?php
 include("include/footer.php")
 ?>
