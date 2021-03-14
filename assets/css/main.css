@@ -2733,3 +2733,24 @@ body::scrollbar-thumb {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+.head-huay-card {
+    /* background-color: #940C12; */
+    background-image: linear-gradient(#A20000, #B10000, #FF0000);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bg-huay-card {
+    background: url('../img/huay-bg.jpeg');
+    background-size: cover;
+}
+.huay-title-in-card {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #2E2E2E;
+}
+@media (max-width: 767px) {
+    .huay-title-in-card {
+        font-size: 0.9rem;
+    }
+}
