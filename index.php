@@ -25,7 +25,7 @@ include("include/navbar.php")
     </div> -->
 	<br>
 	<div class="container">
-		<section>
+		<section id="check-huay-card">
 			<div class="row mt-3 d-flex justify-content-center" style="--bs-gutter-x: 0;">
 				<div class="col-12 col-sm-4 check-huay">
 					<form action="" class="my-2" style="width: 80%; margin: 0 auto;">

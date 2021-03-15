@@ -1,4 +1,5 @@
-function checkhuay() {
+function checkhuay(e) {
+  e.preventDefault()
 
   var type = document.getElementById("huay-type").value;
   var huay = document.getElementById("huay").value;
