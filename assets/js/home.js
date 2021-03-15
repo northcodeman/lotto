@@ -66,25 +66,19 @@ function showLottoDate() {
                 lottoList.forEach(lotto => {
 
                     if (lotto.name == "หวยไทย") {
-
                         document.getElementById('date-thai').innerHTML = lotto.date
-
                     } else if (lotto.name == "หวยมาเลย์") {
-
                         document.getElementById('date-malay').innerHTML = lotto.date
-
+                       
                     } else if (lotto.name == "หวยฮานอยVIP") {
-
                         document.getElementById('date-hanoi-vip').innerHTML = lotto.date
-
+                        
                     } else if (lotto.name == "หวยฮานอยพิเศษ") {
-
                         document.getElementById('date-hanoi-s').innerHTML = lotto.date
-
+                       
                     } else if (lotto.name == "หวยฮานอย") {
-
                         document.getElementById('date-hanoi').innerHTML = lotto.date
-
+                        
                     } else if (lotto.name == "หวยลาว") {
 
                         document.getElementById('date-lao').innerHTML = lotto.date
@@ -97,6 +91,62 @@ function showLottoDate() {
 
                         document.getElementById('date-lao-vip').innerHTML = lotto.date
 
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=0",
+                    success: function (response) {
+                        $("#pol0").html(response);
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=1",
+                    success: function (response) {
+                        $("#pol1").html(response);
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=2",
+                    success: function (response) {
+                        $("#pol2").html(response);
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=3",
+                    success: function (response) {
+                        $("#pol3").html(response);
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=4",
+                    success: function (response) {
+                        $("#pol4").html(response);
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=5",
+                    success: function (response) {
+                        $("#pol5").html(response);
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=6",
+                    success: function (response) {
+                        $("#pol6").html(response);
+                    }
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "sorting.php?lotto=7",
+                    success: function (response) {
+                        $("#pol7").html(response);
                     }
                 });
             }
