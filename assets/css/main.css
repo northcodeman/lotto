@@ -1134,7 +1134,7 @@ body::scrollbar-thumb {
     font-family: 'Prompt', sans-serif;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: #000000;
+    /* background-color: #000000; */
 }
 
 #services .ser_cnt .serv {
@@ -1142,7 +1142,7 @@ body::scrollbar-thumb {
 }
 
 #services .ser_cnt .serv .card {
-    background: var(--bg-dark-cnt);
+    background: #a40000;
     padding: 40px;
     border: 0;
     -webkit-border-radius: 15px;
