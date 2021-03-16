@@ -60,7 +60,7 @@ include("include/navbar.php")
 						</div>
 						<input id="huay" type="text" placeholder="กรอกเลขหวย" maxlength="6" pattern="[0-9]*" style="border-radius: 50px; text-align: center; width: 100%;">
 					</form>
-					<button class="check-huay-btn" onclick="checkhuay()">ยืนยัน</button>
+					<button type="submit" class="check-huay-btn" onclick="checkhuay(event); return false">ยืนยัน</button>
 				</div>
 			</div>
 		</section>

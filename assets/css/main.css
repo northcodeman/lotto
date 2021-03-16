@@ -1284,7 +1284,8 @@ body::scrollbar-thumb {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 1px;
-    color: #c6c9c8;
+    /* color: #c6c9c8; */
+    color: #FFDF80;
 }
 
 #projects .pr_cnt .pr_obj .pr_head {
@@ -2448,26 +2449,29 @@ body::scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../img/bghuayresult.png');
     /* background-size: contain;
 
 	background-repeat: no-repeat;
 
 	background-image: url('./../images/ticket.svg'); */
-    background: -moz-linear-gradient(45deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 100%);
+    /* background: -moz-linear-gradient(45deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 100%);
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(192, 192, 192, 1)), color-stop(50%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(128, 128, 128, 1)));
     background: -webkit-linear-gradient(45deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 100%);
     background: -o-linear-gradient(45deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 100%);
     background: -ms-linear-gradient(45deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 100%);
-    background: linear-gradient(45deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 100%);
+    background: linear-gradient(45deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(128, 128, 128, 1) 100%); */
     /* background-image: url("../images/flags/silver.png");
 
 	background-repeat: no-repeat;
 
 	background-size: 100% 100%; */
-    border-radius: 50px;
-    border-width: 2px;
-    border: solid;
-    border-color: #10101082;
+    /* border-radius: 50px; */
+    /* border-width: 2px; */
+    /* border: solid; */
+    /* border-color: #10101082; */
     margin-top: 15px;
 }
 
@@ -2707,21 +2711,25 @@ body::scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: -moz-linear-gradient(45deg, rgba(153, 92, 21, 1) 0%, rgba(248, 250, 120, 1) 50%, rgba(153, 92, 21, 1) 100%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/bghuayresult2.png");
+    /* background: -moz-linear-gradient(45deg, rgba(153, 92, 21, 1) 0%, rgba(248, 250, 120, 1) 50%, rgba(153, 92, 21, 1) 100%);
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(153, 92, 21, 1)), color-stop(50%, rgba(248, 250, 120, 1)), color-stop(100%, rgba(153, 92, 21, 1)));
     background: -webkit-linear-gradient(45deg, rgba(153, 92, 21, 1) 0%, rgba(248, 250, 120, 1) 50%, rgba(153, 92, 21, 1) 100%);
     background: -o-linear-gradient(45deg, rgba(153, 92, 21, 1) 0%, rgba(248, 250, 120, 1) 50%, rgba(153, 92, 21, 1) 100%);
     background: -ms-linear-gradient(45deg, rgba(153, 92, 21, 1) 0%, rgba(248, 250, 120, 1) 50%, rgba(153, 92, 21, 1) 100%);
-    background: linear-gradient(45deg, rgba(153, 92, 21, 1) 0%, rgba(248, 250, 120, 1) 50%, rgba(153, 92, 21, 1) 100%);
+    background: linear-gradient(45deg, rgba(153, 92, 21, 1) 0%, rgba(248, 250, 120, 1) 50%, rgba(153, 92, 21, 1) 100%); */
     /* background-image: url("../images/flags/gold.png");
 
 	background-repeat: no-repeat;
 
 	background-size: 100% 100%; */
-    border-radius: 50px;
+    /* border-radius: 50px;
     border-width: 2px;
     border: solid;
-    border-color: #00000082;
+    border-color: #00000082; */
     width: 100%;
     height: 67px;
     padding: 0 10px;
