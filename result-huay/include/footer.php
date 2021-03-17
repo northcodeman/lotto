@@ -18,7 +18,7 @@
           <a class="nav-link p-0 footer-menu" href="#">หน้าแรก</a>
           <a class="nav-link p-0 footer-menu" href="#">ตรวจหวย</a>
           <a class="nav-link p-0 footer-menu" href="#">หวยไทย</a>
-          <a class="nav-link p-0 footer-menu" href="#">หวยนอกประเทศ</a>
+          <a class="nav-link p-0 footer-menu" href="#">หวยต่างประเทศ</a>
           <a class="nav-link p-0 footer-menu" href="#">วิธีการใช้</a>
         </div>
       </div>

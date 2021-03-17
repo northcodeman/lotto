@@ -191,11 +191,11 @@ function getStockData() {
 
                 cardData += '<b style="color:black;margin-right: 15px;font-family: Prompt;font-size: 24px;">3ตัวบน</b>'
 
-                cardData += '<div>' + Stock.prize1[0] + '</div>'
+                cardData += '<img src="assets/img/number/num-' + Stock.prize1[0] + '.png" alt="" style="width: 30px; height: 100%">'
 
-                cardData += '<div>' + Stock.prize1[1] + '</div>'
+                cardData += '<img src="assets/img/number/num-' + Stock.prize1[1] + '.png" alt="" style="width: 30px; height: 100%">'
 
-                cardData += '<div>' + Stock.prize1[2] + '</div>'
+                cardData += '<img src="assets/img/number/num-' + Stock.prize1[2] + '.png" alt="" style="width: 30px; height: 100%">'
 
                 cardData += '</div>'
 
@@ -221,9 +221,9 @@ function getStockData() {
 
                 cardData += '<div class="two_reward_number">'
 
-                cardData += '<div>' + Stock.prize2[0][0] + '</div>'
+                cardData += '<img src="assets/img/number/num-' + Stock.prize2[0][0] + '.png" alt="" style="width: 30px; height: 100%">'
 
-                cardData += '<div>' + Stock.prize2[0][1] + '</div>'
+                cardData += '<img src="assets/img/number/num-' + Stock.prize2[0][1] + '.png" alt="" style="width: 30px; height: 100%">'
 
                 cardData += '</div>'
 
@@ -243,9 +243,9 @@ function getStockData() {
 
                 cardData += '<div class="two_reward_number">'
 
-                cardData += '<div>' + Stock.prize2[1][0] + '</div>'
+                cardData += '<img src="assets/img/number/num-' + Stock.prize2[1][0] + '.png" alt="" style="width: 30px; height: 100%">'
 
-                cardData += '<div>' + Stock.prize2[1][1] + '</div>'
+                cardData += '<img src="assets/img/number/num-' + Stock.prize2[1][1] + '.png" alt="" style="width: 30px; height: 100%">'
 
                 cardData += '</div>'
 

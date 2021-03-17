@@ -57,21 +57,21 @@
           <li class="nav-item dropdown">
             <a class="nav-link font15 p-menu dropdown-toggle" href="#" id="interLotto" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 99;">หวยต่างประเทศ</a>
             <ul class="dropdown-menu" aria-labelledby="interLotto">
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นเกาหลี</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-นิเคอิรอบเช้า</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-นิเคอิรอบบ่าย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-ฮั่งเส็งรอบเช้า</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-ฮั่งเส็งรอบบ่าย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-จีนรอบเช้า</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-จีนรอบบ่าย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นไต้หวัน</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นสิงคโปร์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นอียิปต์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นเยอรมัน</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นอังกฤษ</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นรัสเซีย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นอินเดีย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="../index.php#projects">-หุ้นดาวโจนส์</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(4)">-หุ้นเกาหลี</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(0)">-นิเคอิรอบเช้า</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(5)">-นิเคอิรอบบ่าย</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(2)">-ฮั่งเส็งรอบเช้า</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(7)">-ฮั่งเส็งรอบบ่าย</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(1)">-จีนรอบเช้า</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(6)">-จีนรอบบ่าย</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(3)">-หุ้นไต้หวัน</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(8)">-หุ้นสิงคโปร์</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(11)">-หุ้นอียิปต์</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(14)">-หุ้นเยอรมัน</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(13)">-หุ้นอังกฤษ</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(12)">-หุ้นรัสเซีย</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(10)">-หุ้นอินเดีย</a></li>
+              <li><a class="dropdown-item font15 text-white" href="../index.php#projects" onclick="btnTrig(15)">-หุ้นดาวโจนส์</a></li>
               <li><a class="dropdown-item font15 text-white" href="huay-malay.php">-หวยมาเลย์</a></li>
               <li><a class="dropdown-item font15 text-white" href="huay-lao.php">-หวยลาว</a></li>
               <li><a class="dropdown-item font15 text-white" href="huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
@@ -141,21 +141,21 @@
                 aria-controls="interLottoM" aria-expanded="false">หวยต่างประเทศ</a>
                 <div class="collapse" id="interLottoM">
                   <ul>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นเกาหลี</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-นิเคอิรอบเช้า</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-นิเคอิรอบบ่าย</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-ฮั่งเส็งรอบเช้า</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-ฮั่งเส็งรอบบ่าย</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-จีนรอบเช้า</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-จีนรอบบ่าย</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นไต้หวัน</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นสิงคโปร์</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นอียิปต์</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นเยอรมัน</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นอังกฤษ</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นรัสเซีย</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นอินเดีย</a></li>
-                    <li><a class="font15 text-white" href="../index.php#projects">-หุ้นดาวโจนส์</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(4)">-หุ้นเกาหลี</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(0)">-นิเคอิรอบเช้า</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(5)">-นิเคอิรอบบ่าย</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(2)">-ฮั่งเส็งรอบเช้า</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(7)">-ฮั่งเส็งรอบบ่าย</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(1)">-จีนรอบเช้า</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(6)">-จีนรอบบ่าย</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(3)">-หุ้นไต้หวัน</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(8)">-หุ้นสิงคโปร์</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(11)">-หุ้นอียิปต์</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(14)">-หุ้นเยอรมัน</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(13)">-หุ้นอังกฤษ</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(12)">-หุ้นรัสเซีย</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(10)">-หุ้นอินเดีย</a></li>
+                    <li><a class="font15 text-white" href="../index.php#projects" onclick="btnTrig(15)">-หุ้นดาวโจนส์</a></li>
                     <li><a class="font15 text-white" href="huay-malay.php">-หวยมาเลย์</a></li>
                     <li><a class="font15 text-white" href="huay-lao.php">-หวยลาว</a></li>
                     <li><a class="font15 text-white" href="huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>

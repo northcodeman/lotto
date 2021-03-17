@@ -82,7 +82,7 @@ function startSlide() {
 
         smartSpeed: 1000,
 
-        autoplayTimeout: 10000,
+        autoplayTimeout: 2000,
 
         autoplayHoverPause: true,
 
@@ -96,7 +96,7 @@ function startSlide() {
 
                 margin: 10,
 
-                autoplayTimeout: 15000,
+                autoplayTimeout: 2000,
 
             },
 
@@ -108,7 +108,7 @@ function startSlide() {
 
                 margin: 30,
 
-                autoplayTimeout: 15000,
+                autoplayTimeout: 2000,
 
             },
 
@@ -120,7 +120,7 @@ function startSlide() {
 
                 autoplay: true,
 
-                autoplayTimeout: 19000,
+                autoplayTimeout: 3000,
 
             }
 
