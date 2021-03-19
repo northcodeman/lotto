@@ -400,3 +400,54 @@ function sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
 
 }
+
+
+function ticket_number(){
+    $('.ticket_number div').each(function() {
+        if($(this).html() == "0"){
+            $(this).html('<img src="../assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "1") {
+            $(this).html('<img src="../assets/img/number/num-1.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "2") {
+            $(this).html('<img src="../assets/img/number/num-2.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "3") {
+            $(this).html('<img src="../assets/img/number/num-3.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "4") {
+            $(this).html('<img src="../assets/img/number/num-4.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "5") {
+            $(this).html('<img src="../assets/img/number/num-5.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "6") {
+            $(this).html('<img src="../assets/img/number/num-6.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "7") {
+            $(this).html('<img src="../assets/img/number/num-7.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "8") {
+            $(this).html('<img src="../assets/img/number/num-8.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "9") {
+            $(this).html('<img src="../assets/img/number/num-9.png" alt="" style="width: 30px; height: 100%">')
+        }
+    });
+
+    $('.two_reward_number div').each(function() {
+        if($(this).html() == "0"){
+            $(this).html('<img src="../assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "1") {
+            $(this).html('<img src="../assets/img/number/num-1.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "2") {
+            $(this).html('<img src="../assets/img/number/num-2.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "3") {
+            $(this).html('<img src="../assets/img/number/num-3.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "4") {
+            $(this).html('<img src="../assets/img/number/num-4.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "5") {
+            $(this).html('<img src="../assets/img/number/num-5.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "6") {
+            $(this).html('<img src="../assets/img/number/num-6.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "7") {
+            $(this).html('<img src="../assets/img/number/num-7.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "8") {
+            $(this).html('<img src="../assets/img/number/num-8.png" alt="" style="width: 30px; height: 100%">')
+        } else if($(this).html() == "9") {
+            $(this).html('<img src="../assets/img/number/num-9.png" alt="" style="width: 30px; height: 100%">')
+        }
+    });
+}

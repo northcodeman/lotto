@@ -20,6 +20,14 @@ $.ajax({
 	url: "../api/apihuay.php?huay=huay-hanoi-vip",
 	success: function (response) {
 		$("#here").html(response);
+		ticket_number();
 	}
 });
 </script>
+<style>
+.two_reward_with_text {
+	width: 100%;
+	margin: 0 auto;
+	background-image: url("../assets/img/bghuayresult.png");
+}
+</style>
