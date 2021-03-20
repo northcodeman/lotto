@@ -30,7 +30,7 @@ include("include/navbar.php")
 				<div class="col-12 col-sm-4 check-huay">
 					<form action="" class="my-2" style="width: 80%; margin: 0 auto;">
 						<div>
-							<h3 class="text-white text-center">ตรวจหวย<span>
+							<h3 id="check-huay-text" class="text-white text-center">ตรวจหวย<span>
 									<select id="huay-type" class="form-select form-select-sm" aria-label=".form-select-sm example" style="color: #FF0000;">
 										<option selected value="หวยลาว">หวยลาว</option>
 										<option value="หวยลาวสตาร์">หวยลาวสตาร์</option>
@@ -58,9 +58,9 @@ include("include/navbar.php")
 									</select>
 								</span></h3>
 						</div>
-						<input id="huay" type="text" placeholder="กรอกเลขหวย" maxlength="6" pattern="[0-9]*" style="border-radius: 50px; text-align: center; width: 100%;">
+						<input id="huay" class="lang" type="text" placeholder="กรอกเลขหวย" maxlength="6" pattern="[0-9]*" style="border-radius: 50px; text-align: center; width: 100%;">
 					</form>
-					<button type="submit" class="check-huay-btn" onclick="checkhuay(event); return false">ยืนยัน</button>
+					<button id="confirm-btn" type="submit" class="check-huay-btn lang" onclick="checkhuay(event); return false">ยืนยัน</button>
 				</div>
 			</div>
 		</section>
@@ -70,14 +70,14 @@ include("include/navbar.php")
 				<div class="row">
 					<div class="col-lg-6 col-md-12 cnt_head">
 						<span class="sub_head" id="current-time"></span>
-						<h2 class="s_head">ดูผลหวยออนไลน์</h2>
+						<h2 id="huay-online" class="s_head lang">ดูผลหวยออนไลน์</h2>
 						<!-- <p class="h_body">ผลหวยออนไลน์ ตรวจหวยล่าสุด ผลหวยย้อนหลัง ผลหวยงวดที่ผ่านมา แม่นยำ รวดเร็ว ครบทุกหวย
 						ผลหวยรัฐบาล ผลหวยลาว ผลหวยฮานอย หวยฮานอยพิเศษ หวยฮานอย VIP</p> -->
 					</div>
 				</div>
 				<div class="row ser_cnt text-center">
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-thai.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-12 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -86,10 +86,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยรัฐบาลไทย</span>
+												<span id="huay-thai-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยรัฐบาลไทย</span>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-thai">รออัพเดท...</p>
 											</div>
 										</div>
@@ -103,8 +103,8 @@ include("include/navbar.php")
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-lao.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -113,10 +113,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยลาว</span>
+												<span id="huay-lao-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยลาว</span>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-lao">รออัพเดท...</p>
 											</div>
 										</div>
@@ -130,8 +130,8 @@ include("include/navbar.php")
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-lao-vip.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -140,10 +140,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยลาว <b class="text-warning">VIP</b></span>
+												<span id="huay-lao-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยลาว</span> <b class="text-warning">VIP</b>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-lao-vip">รออัพเดท...</p>
 											</div>
 										</div>
@@ -157,8 +157,8 @@ include("include/navbar.php")
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-lao-star.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -167,10 +167,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยลาว <b class="text-danger">สตาร์</b></span>
+												<span id="huay-lao-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยลาว</span> <b class="text-danger">สตาร์</b>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-lao-star">รออัพเดท...</p>
 											</div>
 										</div>
@@ -184,8 +184,8 @@ include("include/navbar.php")
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-hanoi.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -194,10 +194,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยฮานอย</span>
+												<span id="huay-hanoi-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยฮานอย</span>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-hanoi">รออัพเดท...</p>
 											</div>
 										</div>
@@ -211,8 +211,8 @@ include("include/navbar.php")
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-hanoi-s.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -221,10 +221,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยฮานอย <b class="text-danger">พิเศษ</b></span>
+												<span id="huay-hanoi-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยฮานอย</span> <b class="text-danger">พิเศษ</b>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-hanoi-s">รออัพเดท...</p>
 											</div>
 										</div>
@@ -238,8 +238,8 @@ include("include/navbar.php")
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-hanoi-vip.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -248,10 +248,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยฮานอย <b class="text-warning">VIP</b></span>
+												<span id="huay-hanoi-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยฮานอย</span> <b class="text-warning">VIP</b>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-hanoi-vip">รออัพเดท...</p>
 											</div>
 										</div>
@@ -266,8 +266,8 @@ include("include/navbar.php")
 						</a>
 					</div>
 
-					<div class="col-lg-4 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-malay.php" style="text-decoration: none;color:unset;">
+					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
+						<a style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -276,10 +276,10 @@ include("include/navbar.php")
 									<div class="col-8 text-left">
 										<div class="row">
 											<div class="col-12">
-												<span class="ser_ttl" style="font-size: 18px;">ผลหวยมาเลย์
+												<span id="huay-malay-title" class="ser_ttl lang" style="font-size: 18px;">ผลหวยมาเลย์</span>
 											</div>
 											<div class="col-12">
-												<small>งวดล่าสุด</small>
+												<small id="latest-result" class="lang">งวดล่าสุด</small>
 												<p style="font-size: 16px;margin-bottom: 0px;" id="date-malay">รออัพเดท...</p>
 											</div>
 										</div>
@@ -301,7 +301,7 @@ include("include/navbar.php")
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1 col-md-12 cnt_head">
-						<h2 class="s_head">หวยหุ้นอัพเดท</h2>
+						<h2 id="huay-hun" class="s_head">หวยหุ้นอัพเดท</h2>
 						<!-- <p class="h_body">รวมหวยหุ้นต่างๆ </p> -->
 						<div class="row" id="StockBtn">
 							<div class="col-md-12">

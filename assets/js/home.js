@@ -35,7 +35,16 @@ function startTime() {
 
     s = checkTime(s);
 
-    var time = "วันที่ " + DD + " " + month[MM] + " " + (YY + 543) + "  |  " + h + ":" + m + ":" + s;
+    var lang = localStorage.getItem("lang")
+
+    var time 
+    
+    if (lang == 'th') {
+        time =  "วันที่ " + DD + " " + month[MM] + " " + (YY + 543) + "  |  " + h + ":" + m + ":" + s;
+
+    } else {
+        time =  DD + " " + MM + " " + YY + "  |  " + h + ":" + m + ":" + s;
+    }
 
     document.getElementById('current-time').innerHTML = time;
 
@@ -189,7 +198,7 @@ function getStockData() {
 
                 cardData += '<div class="ticket_number">'
 
-                cardData += '<b style="color:black;margin-right: 15px;font-family: Prompt;font-size: 24px;">3ตัวบน</b>'
+                cardData += '<b style="color:black;margin-right: 15px;font-family: Prompt;font-size: 24px;">3 <span id="digit-top" class="lang">ตัวบน</span></b>'
 
                 cardData += '<img src="assets/img/number/num-' + Stock.prize1[0] + '.png" alt="" style="width: 30px; height: 100%">'
 
@@ -213,7 +222,7 @@ function getStockData() {
 
                 cardData += '<center>'
 
-                cardData += '<b style="color:white;margin-right: 15px;font-family: Prompt;font-size: 16px;">2 ตัวบน</b>'
+                cardData += '<b style="color:white;margin-right: 15px;font-family: Prompt;font-size: 16px;">2 <span id="digit-top" class="lang">ตัวบน</span></b>'
 
                 cardData += '</center>'
 
@@ -235,7 +244,7 @@ function getStockData() {
 
                 cardData += '<center>'
 
-                cardData += '<b style="color:white;margin-right: 15px;font-family: Prompt;font-size: 16px;">2 ตัวล่าง</b>'
+                cardData += '<b style="color:white;margin-right: 15px;font-family: Prompt;font-size: 16px;">2 <span id="digit-last" class="lang">ตัวล่าง</span></b>'
 
                 cardData += '</center>'
 
@@ -257,7 +266,7 @@ function getStockData() {
 
                 cardData += '<div class="pr_subhead">' + Stock.date + '</div>'
 
-                cardData += '<div class="pr_head">' + Stock.name + '</div>'
+                cardData += '<div id="owlnav-' + index + '" class="pr_head lang">' + Stock.name + '</div>'
 
                 cardData += '</div>'
 
@@ -267,7 +276,7 @@ function getStockData() {
 
 
 
-                stockBtnData += '<div class="col-md-2 col-4"><a id="owlnav-' + index + '" onclick="btnTrig(' + index + ')" style="margin-top:5px;font-size:12px" class="btn btn-outline-danger btn-sm btn-block">' + Stock.name + '</a></div>'
+                stockBtnData += '<div class="col-md-2 col-4"><a id="owlnav-' + index + '" onclick="btnTrig(' + index + ')" style="margin-top:5px;font-size:12px" class="btn btn-outline-danger btn-sm btn-block lang">' + Stock.name + '</a></div>'
 
 
 
@@ -311,11 +320,11 @@ function btnTrig(index) {
 
             if (i !== index) {
 
-                document.getElementById("owlnav-" + i).className = 'btn btn-outline-danger btn-sm btn-block'
+                document.getElementById("owlnav-" + i).className = 'btn btn-outline-danger btn-sm btn-block lang'
 
             } else {
 
-                document.getElementById("owlnav-" + index).className = 'btn btn-danger btn-sm btn-block'
+                document.getElementById("owlnav-" + index).className = 'btn btn-danger btn-sm btn-block lang'
 
             }
 
@@ -341,11 +350,11 @@ function onOwlChange(index) {
 
         if (i !== index) {
 
-            document.getElementById("owlnav-" + i).className = 'btn btn-outline-danger btn-sm btn-block'
+            document.getElementById("owlnav-" + i).className = 'btn btn-outline-danger btn-sm btn-block lang'
 
         } else {
 
-            document.getElementById("owlnav-" + index).className = 'btn btn-danger btn-sm btn-block'
+            document.getElementById("owlnav-" + index).className = 'btn btn-danger btn-sm btn-block lang'
 
         }
 

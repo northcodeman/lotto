@@ -6,20 +6,20 @@
           </div>
           <div class="col-9 col-sm-8">
             <h3 class="mb-1 mt-2" style="color: #FFDF80;">w w w . มี ทุ ก ห ว ย . c o m</h3>
-            <p class="mb-0 footer-content">&emsp;&emsp;&emsp;เราได้รวมหวยทุกประเภทไว้ที่นี้ที่เดียวเพื่อให้
+            <p class="mb-0 footer-content">&emsp;&emsp;&emsp;<span id="footer-content" class="lang">เราได้รวมหวยทุกประเภทไว้ที่นี้ที่เดียวเพื่อให้
               ผู้ใช้งานได้ดูและใช้อย่างมีประสิทธิภาพที่สุด ทั้งสลากกินแบ่งรัฐบาล สลากกินแบ่งต่างๆที่อยู่ในไทย
               และนอกประเทศ ทั้งงวดล่าสุดและก่อนหน้านี้ ลุ้นไปพร้อมกับเรา มีทุกหวย.com
               ออกผลไวกว่าที่อื่นแน่นอนไม่ต้องไปรอให้เสียเวลาหรือเข้าหลายที่
-              สำหรับผู้ที่ชื่นชอบ หรือนักลุ้นทั้งหลาย</p>
+              สำหรับผู้ที่ชื่นชอบ หรือนักลุ้นทั้งหลาย</span></p>
           </div>
           <div class="col-none col-sm-2">
             <div class="d-flex flex-column">
-              <h4 style="border-bottom: 3px solid #FFDF80; width: fit-content;">เมนู</h4>
-              <a class="nav-link p-0 footer-menu" href="index.php">หน้าแรก</a>
-              <a class="nav-link p-0 footer-menu" href="#">ตรวจหวย</a>
-              <a class="nav-link p-0 footer-menu" href="#">หวยไทย</a>
-              <a class="nav-link p-0 footer-menu" href="#">หวยต่างประเทศ</a>
-              <a class="nav-link p-0 footer-menu" href="#">วิธีการใช้</a>
+              <h4 id="footer-menu" class="lang" style="border-bottom: 3px solid #FFDF80; width: fit-content;">เมนู</h4>
+              <a id="menu-home" class="nav-link p-0 footer-menu lang" href="index.php">หน้าแรก</a>
+              <a id="menu-check-huay" class="nav-link p-0 footer-menu lang" href="#check-huay-card">ตรวจหวย</a>
+              <a id="thaiLotto" class="nav-link p-0 footer-menu lang" href="#services">หวยไทย</a>
+              <a id="interLotto" class="nav-link p-0 footer-menu lang" href="#projects">หวยต่างประเทศ</a>
+              <a id="menu-doc" class="nav-link p-0 footer-menu lang" href="#">วิธีการใช้</a>
             </div>
           </div>
         </div>
@@ -47,6 +47,7 @@
 	<script src="assets/js/home.js"></script>
 	<script src="assets/js/custom-nav.js"></script>
 	<script src="assets/js/check-huay.js"></script>
+	<script src="assets/js/lang.js"></script>
 
 </body>
 

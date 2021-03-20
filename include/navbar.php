@@ -21,10 +21,11 @@
   <!-- Favicons -->
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="icon" href="assets/img/favicon.ico">
+	<script src="assets/js/multilang.js"></script>
 
 </head>
 
-<body class="page-body">
+<body class="page-body" onload="onLoad()">
 
   <div >
     <img class="logo-container" src="assets/img/logo.png" alt="" style="max-width: 15%;">
@@ -36,18 +37,18 @@
       <div class="collapse navbar-collapse" id="navbarsExample07">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link font15 p-menu" href="index.php" style="z-index: 99;">หน้าแรก</a>
+            <a id="menu-home" class="nav-link font15 p-menu lang" href="index.php" style="z-index: 99;">หน้าแรก</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link font15 p-menu" href="#check-huay-card" style="z-index: 99;">ตรวจหวย</a>
+            <a id="menu-check-huay" class="nav-link font15 p-menu lang" href="#check-huay-card" style="z-index: 99;">ตรวจหวย</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link font15 p-menu dropdown-toggle" href="#" id="thaiLotto" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 99;">หวยไทย</a>
+            <a class="nav-link font15 p-menu dropdown-toggle lang" href="#" id="thaiLotto" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 99;">หวยไทย</a>
             <ul class="dropdown-menu" aria-labelledby="thaiLotto">
-              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-thai.php">-หวยรัฐบาล</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยออมสิน</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยธกส</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">-หวยหุ้นไทย</a></li>
+              <li><a id="menu-huay-rat" class="dropdown-item font15 text-white lang" href="result-huay/huay-thai.php">-หวยรัฐบาล</a></li>
+              <li><a id="menu-huay-omsin" class="dropdown-item font15 text-white lang" href="#">-หวยออมสิน</a></li>
+              <li><a id="menu-huay-tgs" class="dropdown-item font15 text-white lang" href="#">-หวยธกส</a></li>
+              <li><a id="menu-hun-thai" class="dropdown-item font15 text-white lang" href="#">-หวยหุ้นไทย</a></li>
             </ul>
           </li>
         </ul>
@@ -55,38 +56,39 @@
       <div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link font15 p-menu dropdown-toggle" href="#" id="interLotto" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 99;">หวยต่างประเทศ</a>
+            <a class="nav-link font15 p-menu dropdown-toggle lang" href="#" id="interLotto" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 99;">หวยต่างประเทศ</a>
             <ul class="dropdown-menu" aria-labelledby="interLotto">
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(4)">-หุ้นเกาหลี</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(0)">-นิเคอิรอบเช้า</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(5)">-นิเคอิรอบบ่าย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(2)">-ฮั่งเส็งรอบเช้า</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(7)">-ฮั่งเส็งรอบบ่าย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(1)">-จีนรอบเช้า</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(6)">-จีนรอบบ่าย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(3)">-หุ้นไต้หวัน</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(8)">-หุ้นสิงคโปร์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(11)">-หุ้นอียิปต์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(14)">-หุ้นเยอรมัน</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(13)">-หุ้นอังกฤษ</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(12)">-หุ้นรัสเซีย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(10)">-หุ้นอินเดีย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#projects" onclick="btnTrig(15)">-หุ้นดาวโจนส์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
-              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-lao.php">-หวยลาว</a></li>
-              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
+              <li><a id="menu-hun-korea" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(4)">-หุ้นเกาหลี</a></li>
+              <li><a id="menu-nikai-1" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(0)">-นิเคอิรอบเช้า</a></li>
+              <li><a id="menu-nikai-2" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(5)">-นิเคอิรอบบ่าย</a></li>
+              <li><a id="menu-hanseng-1" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(2)">-ฮั่งเส็งรอบเช้า</a></li>
+              <li><a id="menu-hanseng-2" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(7)">-ฮั่งเส็งรอบบ่าย</a></li>
+              <li><a id="menu-china-1" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(1)">-จีนรอบเช้า</a></li>
+              <li><a id="menu-china-2" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(6)">-จีนรอบบ่าย</a></li>
+              <li><a id="menu-hun-tiwan" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(3)">-หุ้นไต้หวัน</a></li>
+              <li><a id="menu-hun-sing" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(8)">-หุ้นสิงคโปร์</a></li>
+              <li><a id="menu-hun-egypt" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(11)">-หุ้นอียิปต์</a></li>
+              <li><a id="menu-hun-german" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(14)">-หุ้นเยอรมัน</a></li>
+              <li><a id="menu-hun-eng" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(13)">-หุ้นอังกฤษ</a></li>
+              <li><a id="menu-hun-rus" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(12)">-หุ้นรัสเซีย</a></li>
+              <li><a id="menu-hun-india" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(10)">-หุ้นอินเดีย</a></li>
+              <li><a id="menu-hun-downjone" class="dropdown-item font15 text-white lang" href="#projects" onclick="btnTrig(15)">-หุ้นดาวโจนส์</a></li>
+              <li><a id="menu-huay-malay" class="dropdown-item font15 text-white lang" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
+              <li><a id="menu-huay-laos" class="dropdown-item font15 text-white lang" href="result-huay/huay-lao.php">-หวยลาว</a></li>
+              <li><a id="menu-huay-hanoi" class="dropdown-item font15 text-white lang" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
+              <li><a id="menu-huay-hanoi-s" class="dropdown-item font15 text-white lang" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link font15 p-menu" href="#" style="z-index: 99;">วิธีการใช้</a>
+            <a id="menu-doc" class="nav-link font15 p-menu lang" href="#" style="z-index: 99;">วิธีการใช้</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link font15 p-menu dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown"
+            <a class="nav-link font15 p-menu dropdown-toggle lang" href="#" id="dropdown07" data-bs-toggle="dropdown"
               aria-expanded="false" style="z-index: 99;">ภาษาไทย</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown07">
-              <li><a class="dropdown-item font15 text-white" href="#">ภาษาไทย</a></li>
-              <li><a class="dropdown-item font15 text-white" href="#">English</a></li>
+              <li><a class="dropdown-item font15 text-white" href="#" onclick="changeLang('th')">ภาษาไทย</a></li>
+              <li><a class="dropdown-item font15 text-white" href="#" onclick="changeLang('en')">English</a></li>
+              <li><a class="dropdown-item font15 text-white" href="#" onclick="changeLang('laos')">ພາສາລາວ</a></li>
             </ul>
           </li>
         </ul>
@@ -97,10 +99,11 @@
   
   <nav class="navbar bg-main nav-mobile">
     <div class="dropdown" style="margin-left: 20px;">
-      <a class="nav-link p-menu dropdown-toggle font15" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">ภาษาไทย</a>
+      <a class="nav-link p-menu dropdown-toggle font15 lang" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">ภาษาไทย</a>
       <ul class="dropdown-menu" aria-labelledby="dropdown02">
-        <li><a class="dropdown-item font15 text-white" href="#">ภาษาไทย</a></li>
-        <li><a class="dropdown-item font15 text-white" href="#">English</a></li>
+        <li><a class="dropdown-item font15 text-white" href="#" onclick="changeLang('th')">ภาษาไทย</a></li>
+        <li><a class="dropdown-item font15 text-white" href="#" onclick="changeLang('en')">English</a></li>
+        <li><a class="dropdown-item font15 text-white" href="#" onclick="changeLang('laos')">ພາສາລາວ</a></li>
       </ul>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
@@ -114,20 +117,20 @@
             <!-- <h4 class="text-white"></h4> -->
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link font15 p-menu" href="index.php">หน้าแรก</a>
+                <a id="menu-home" class="nav-link font15 p-menu lang" href="index.php">หน้าแรก</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link font15 p-menu" href="#check-huay-card">ตรวจหวย</a>
+                <a id="menu-check-huay" class="nav-link font15 p-menu lang" href="#check-huay-card">ตรวจหวย</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link font15 p-menu dropdown-toggle" href="#thaiLottoM" role="button" data-bs-toggle="collapse" data-bs-target="#thaiLottoM"
+                <a class="nav-link font15 p-menu dropdown-toggle lang" href="#thaiLottoM" role="button" data-bs-toggle="collapse" data-bs-target="#thaiLottoM"
                 aria-controls="thaiLottoM" aria-expanded="false">หวยไทย</a>
                  <div class="collapse" id="thaiLottoM">
                   <ul>
-                    <li><a class="font15 text-white" href="result-huay/huay-thai.php">-หวยรัฐบาล</a></li>
-                    <li><a class="font15 text-white" href="#">-หวยออมสิน</a></li>
-                    <li><a class="font15 text-white" href="#">-หวยธกส</a></li>
-                    <li><a class="font15 text-white" href="#">-หวยหุ้นไทย</a></li>
+                    <li><a id="menu-huay-rat" class="font15 text-white lang" href="result-huay/huay-thai.php">-หวยรัฐบาล</a></li>
+                    <li><a id="menu-huay-omsin" class="font15 text-white lang" href="#">-หวยออมสิน</a></li>
+                    <li><a id="menu-huay-tgs" class="font15 text-white lang" href="#">-หวยธกส</a></li>
+                    <li><a id="menu-hun-thai" class="font15 text-white lang" href="#">-หวยหุ้นไทย</a></li>
                   </ul>
                  </div>
               </li>
@@ -137,34 +140,34 @@
             <!-- <h4 class="text-white">Contact</h4> -->
             <ul class="list-unstyled">
               <li class="nav-item">
-                <a class="nav-link font15 p-menu dropdown-toggle" href="#interLottoM" role="button" data-bs-toggle="collapse" data-bs-target="#interLottoM"
+                <a class="nav-link font15 p-menu dropdown-toggle lang" href="#interLottoM" role="button" data-bs-toggle="collapse" data-bs-target="#interLottoM"
                 aria-controls="interLottoM" aria-expanded="false">หวยต่างประเทศ</a>
                 <div class="collapse" id="interLottoM">
                   <ul>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(4)">-หุ้นเกาหลี</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(0)">-นิเคอิรอบเช้า</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(5)">-นิเคอิรอบบ่าย</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(2)">-ฮั่งเส็งรอบเช้า</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(7)">-ฮั่งเส็งรอบบ่าย</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(1)">-จีนรอบเช้า</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(6)">-จีนรอบบ่าย</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(3)">-หุ้นไต้หวัน</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(8)">-หุ้นสิงคโปร์</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(11)">-หุ้นอียิปต์</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(14)">-หุ้นเยอรมัน</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(13)">-หุ้นอังกฤษ</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(12)">-หุ้นรัสเซีย</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(10)">-หุ้นอินเดีย</a></li>
-                    <li><a class="font15 text-white" href="#projects" onclick="btnTrig(15)">-หุ้นดาวโจนส์</a></li>
-                    <li><a class="font15 text-white" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
-                    <li><a class="font15 text-white" href="result-huay/huay-lao.php">-หวยลาว</a></li>
-                    <li><a class="font15 text-white" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
-                    <li><a class="font15 text-white" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
+                    <li><a id="menu-hun-korea" class="font15 text-white lang" href="#projects" onclick="btnTrig(4)">-หุ้นเกาหลี</a></li>
+                    <li><a id="menu-nikai-1" class="font15 text-white lang" href="#projects" onclick="btnTrig(0)">-นิเคอิรอบเช้า</a></li>
+                    <li><a id="menu-nikai-2" class="font15 text-white lang" href="#projects" onclick="btnTrig(5)">-นิเคอิรอบบ่าย</a></li>
+                    <li><a id="menu-hanseng-1" class="font15 text-white lang" href="#projects" onclick="btnTrig(2)">-ฮั่งเส็งรอบเช้า</a></li>
+                    <li><a id="menu-hanseng-2" class="font15 text-white lang" href="#projects" onclick="btnTrig(7)">-ฮั่งเส็งรอบบ่าย</a></li>
+                    <li><a id="menu-china-1" class="font15 text-white lang" href="#projects" onclick="btnTrig(1)">-จีนรอบเช้า</a></li>
+                    <li><a id="menu-china-2" class="font15 text-white lang" href="#projects" onclick="btnTrig(6)">-จีนรอบบ่าย</a></li>
+                    <li><a id="menu-hun-tiwan" class="font15 text-white lang" href="#projects" onclick="btnTrig(3)">-หุ้นไต้หวัน</a></li>
+                    <li><a id="menu-hun-sing" class="font15 text-white lang" href="#projects" onclick="btnTrig(8)">-หุ้นสิงคโปร์</a></li>
+                    <li><a id="menu-hun-egypt" class="font15 text-white lang" href="#projects" onclick="btnTrig(11)">-หุ้นอียิปต์</a></li>
+                    <li><a id="menu-hun-german" class="font15 text-white lang" href="#projects" onclick="btnTrig(14)">-หุ้นเยอรมัน</a></li>
+                    <li><a id="menu-hun-eng" class="font15 text-white lang" href="#projects" onclick="btnTrig(13)">-หุ้นอังกฤษ</a></li>
+                    <li><a id="menu-hun-rus" class="font15 text-white lang" href="#projects" onclick="btnTrig(12)">-หุ้นรัสเซีย</a></li>
+                    <li><a id="menu-hun-india" class="font15 text-white lang" href="#projects" onclick="btnTrig(10)">-หุ้นอินเดีย</a></li>
+                    <li><a id="menu-hun-dounjone" class="font15 text-white lang" href="#projects" onclick="btnTrig(15)">-หุ้นดาวโจนส์</a></li>
+                    <li><a id="menu-huay-malay" class="font15 text-white lang" href="result-huay/huay-malay.php">-หวยมาเลย์</a></li>
+                    <li><a id="menu-huay-laos" class="font15 text-white lang" href="result-huay/huay-lao.php">-หวยลาว</a></li>
+                    <li><a id="menu-huay-hanoi" class="font15 text-white lang" href="result-huay/huay-hanoi.php">-หวยเวียดนาม\/ฮานอย</a></li>
+                    <li><a id="menu-huay-hanoi-s" class="font15 text-white lang" href="result-huay/huay-hanoi-s.php">-หวยเวียดนาม\/ฮานอยพิเศษ</a></li>
                   </ul>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link font15 p-menu" href="#">วิธีการใช้</a>
+                <a id="menu-doc" class="nav-link font15 p-menu lang" href="#">วิธีการใช้</a>
               </li>
             </ul>
           </div>

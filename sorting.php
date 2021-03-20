@@ -11,7 +11,7 @@ if (isset($_GET['lotto'])) {
 
 ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัลที่1</p>
+                <p id="1st" class="huay-title-in-card lang">รางวัลที่1</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="th-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -21,8 +21,39 @@ if (isset($_GET['lotto'])) {
                 <img id="th-1-5" src="assets/img/number/num-<?= $prize1[4] ?>.png" alt="" style="width: 30px; height: 100%">
                 <img id="th-1-6" src="assets/img/number/num-<?= $prize1[5] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
-            <div class="col-4">
-                <p class="huay-title-in-card">เลขท้าย2</p>
+            <div class="col-lg-4 offset-lg-1 col-md-4 col-xs-4">
+                <p id="3front" class="huay-title-in-card lang">3ตัวหน้า</p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
+                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
+                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+                <p id="3last" class="huay-title-in-card lang">3ตัวท้าย</p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
+                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
+                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-4">
+                <p id="2last" class="huay-title-in-card lang">เลขท้าย2</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="th-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -30,31 +61,11 @@ if (isset($_GET['lotto'])) {
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <p class="huay-title-in-card">3ตัวหน้า</p>
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <p class="huay-title-in-card">3 ตัวท้าย</p>
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img id="th-3-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-2-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-2-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                    </div>
-                </div>
-            </div>
         <?php
         } else {
         ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัลที่1</p>
+            <p id="1st" class="huay-title-in-card lang">รางวัลที่1</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="th-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -64,32 +75,43 @@ if (isset($_GET['lotto'])) {
                 <img id="th-1-5" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
                 <img id="th-1-6" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
-            <div class="col-4">
-                <p class="huay-title-in-card">เลขท้าย2</p>
+            <div class="col-lg-4 offset-lg-1  col-md-4 col-xs-4">
+                <p id="3front" class="huay-title-in-card lang">3ตัวหน้า</p>
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img id="th-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-2-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
+                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
                     </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <p class="huay-title-in-card">3ตัวหน้า</p>
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
                         <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
                         <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
                         <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <p class="huay-title-in-card">3 ตัวท้าย</p>
+            <div class="col-lg-4 col-md-4 col-xs-4">
+                <p id="3last" class="huay-title-in-card lang">3ตัวท้าย</p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
+                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
+                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-4">
+                <p id="2last" class="huay-title-in-card lang">เลขท้าย2</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <img id="th-3-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-2-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-2-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-2-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
                     </div>
                 </div>
             </div>
@@ -107,7 +129,7 @@ if (isset($_GET['lotto'])) {
         if (!empty($number) and !empty($number2)) {
             $prize1  = array_map('intval', str_split($datatoarray[$huay]["prize1"])); ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 5 ตัวตรง</p>
+                <p id="5digit" class="huay-title-in-card lang">รางวัล 5 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="lo-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -117,7 +139,7 @@ if (isset($_GET['lotto'])) {
                 <img id="lo-1-5" src="assets/img/number/num-<?= $prize1[4] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-5">
-                <p class="huay-title-in-card">4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lo-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -128,7 +150,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-4">
-                <p class="huay-title-in-card">3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang"><span id="digit-top" class="lang">ตัวบน</span></span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lo-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -138,7 +160,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang"><span id="digit-top" class="lang">ตัวบน</span></span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lo-2-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -150,7 +172,7 @@ if (isset($_GET['lotto'])) {
         } else { ?>
 
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 5 ตัวตรง</p>
+                <p id="5digit" class="huay-title-in-card lang">รางวัล 5 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="lo-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -160,7 +182,7 @@ if (isset($_GET['lotto'])) {
                 <img id="lo-1-5" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-5">
-                <p class="huay-title-in-card">4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lo-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -171,7 +193,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-4">
-                <p class="huay-title-in-card">3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang"><span id="digit-top" class="lang">ตัวบน</span></span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lo-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -181,7 +203,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lo-2-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -204,7 +226,7 @@ if (isset($_GET['lotto'])) {
             $prize2_2  = array_map('intval', str_split($datatoarray[$huay]["prize2"][1]));
         ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="lov-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -213,7 +235,7 @@ if (isset($_GET['lotto'])) {
                 <img id="lov-1-4" src="assets/img/number/num-<?= $prize1[3] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-5">
-                <p class="huay-title-in-card">เลขท้าย 2 ตัว</p>
+                <p id="2last" class="huay-title-in-card lang">เลขท้าย 2 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lov-2-1" src="assets/img/number/num-<?= $prize2_1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -222,7 +244,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-7">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัว</p>
+                <p id="3last" class="huay-title-in-card lang">เลขท้าย 3 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lov-3-1" src="assets/img/number/num-<?= $prize2_2[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -235,7 +257,7 @@ if (isset($_GET['lotto'])) {
         } else { ?>
 
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="lov-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -244,7 +266,7 @@ if (isset($_GET['lotto'])) {
                 <img id="lov-1-4" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-5">
-                <p class="huay-title-in-card">เลขท้าย 2 ตัว</p>
+                <p id="2last" class="huay-title-in-card lang">เลขท้าย 2 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lov-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -253,7 +275,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-7">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัว</p>
+                <p id="3last" class="huay-title-in-card lang">เลขท้าย 3 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="lov-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -278,7 +300,7 @@ if (isset($_GET['lotto'])) {
             $prize2_2  = array_map('intval', str_split($datatoarray[$huay]["prize2"][1]));
         ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="los-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -287,7 +309,7 @@ if (isset($_GET['lotto'])) {
                 <img id="los-1-4" src="assets/img/number/num-<?= $prize1[3] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-5">
-                <p class="huay-title-in-card">เลขท้าย 2 ตัว</p>
+                <p id="2last" class="huay-title-in-card lang">เลขท้าย 2 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="los-2-1" src="assets/img/number/num-<?= $prize2_1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -296,7 +318,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-7">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัว</p>
+                <p id="3last" class="huay-title-in-card lang">เลขท้าย 3 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="los-3-1" src="assets/img/number/num-<?= $prize2_2[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -308,7 +330,7 @@ if (isset($_GET['lotto'])) {
         <?php
         } else { ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="los-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -317,7 +339,7 @@ if (isset($_GET['lotto'])) {
                 <img id="los-1-4" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-5">
-                <p class="huay-title-in-card">เลขท้าย 2 ตัว</p>
+                <p id="2last" class="huay-title-in-card lang">เลขท้าย 2 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="los-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -326,7 +348,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-7">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัว</p>
+                <p id="3last" class="huay-title-in-card lang">เลขท้าย 3 ตัว</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="los-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -351,7 +373,7 @@ if (isset($_GET['lotto'])) {
             $prize2_3  = array_map('intval', str_split($datatoarray[$huay]["prize2"][2]));
         ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -360,7 +382,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-<?= $prize1[3] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-<?= $prize2_2[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -369,7 +391,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-<?= $prize2_3[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -378,7 +400,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-<?= $prize2_1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -390,7 +412,7 @@ if (isset($_GET['lotto'])) {
         <?php
         } else { ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -399,7 +421,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -408,7 +430,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -417,7 +439,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -442,7 +464,7 @@ if (isset($_GET['lotto'])) {
             $prize2_3  = array_map('intval', str_split($datatoarray[$huay]["prize2"][2]));
         ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -451,7 +473,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-<?= $prize1[3] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-<?= $prize2_2[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -460,7 +482,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-<?= $prize2_3[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -469,7 +491,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-<?= $prize2_1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -481,7 +503,7 @@ if (isset($_GET['lotto'])) {
         <?php
         } else { ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -490,7 +512,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -499,7 +521,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -508,7 +530,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -533,7 +555,7 @@ if (isset($_GET['lotto'])) {
             $prize2_3  = array_map('intval', str_split($datatoarray[$huay]["prize2"][2]));
         ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -542,7 +564,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-<?= $prize1[3] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-<?= $prize2_2[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -551,7 +573,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-<?= $prize2_3[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -560,7 +582,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-<?= $prize2_1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -572,7 +594,7 @@ if (isset($_GET['lotto'])) {
         <?php
         } else { ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -581,7 +603,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -590,7 +612,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -599,7 +621,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -624,7 +646,7 @@ if (isset($_GET['lotto'])) {
             $prize2_3  = array_map('intval', str_split($datatoarray[$huay]["prize2"][2]));
         ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-<?= $prize1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -633,7 +655,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-<?= $prize1[3] ?>.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-<?= $prize2_2[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -642,7 +664,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-<?= $prize2_3[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -651,7 +673,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-<?= $prize2_1[0] ?>.png" alt="" style="width: 30px; height: 100%">
@@ -663,7 +685,7 @@ if (isset($_GET['lotto'])) {
         <?php
         } else { ?>
             <div class="col-12">
-                <p class="huay-title-in-card">รางวัล 4 ตัวตรง</p>
+                <p id="4digit" class="huay-title-in-card lang">4 ตัวตรง</p>
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <img id="vn-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -672,7 +694,7 @@ if (isset($_GET['lotto'])) {
                 <img id="vn-1-4" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2 ตัวบน</p>
+                <p class="huay-title-in-card">2 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -681,7 +703,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-3">
-                <p class="huay-title-in-card">2ตัวล่าง</p>
+                <p class="huay-title-in-card">2 <span id="digit-last" class="lang">ตัวล่าง</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-2-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
@@ -690,7 +712,7 @@ if (isset($_GET['lotto'])) {
                 </div>
             </div>
             <div class="col-6">
-                <p class="huay-title-in-card">เลขท้าย 3 ตัวบน</p>
+                <p class="huay-title-in-card">3 <span id="digit-top" class="lang">ตัวบน</span></p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                         <img id="vn-3-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
