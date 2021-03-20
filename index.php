@@ -301,7 +301,7 @@ include("include/navbar.php")
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1 col-md-12 cnt_head">
-						<h2 id="huay-hun" class="s_head">หวยหุ้นอัพเดท</h2>
+						<h2 id="huay-hun" class="s_head lang">หวยหุ้นอัพเดท</h2>
 						<!-- <p class="h_body">รวมหวยหุ้นต่างๆ </p> -->
 						<div class="row" id="StockBtn">
 							<div class="col-md-12">
