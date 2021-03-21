@@ -1,13 +1,31 @@
 <?php
 if (isset($_GET['lotto'])) {
     $datatoarray = json_decode(file_get_contents("https://www.bauto28.com/latest-date.php"), true);
+    $thaiLotto = json_decode(file_get_contents("http://154.16.7.192/data.php"), true);
+    // print_r($datatoarray[0]);
+    // print_r($thaiLotto["data"][0]);
+    // print_r($thaiLotto["data"][0]["data"][0]["FirstPrize"]);
+
     if ($_GET['lotto'] == '0') { // ไทย 0
         $huay = 0;
         // print_r($datatoarray[$huay]["prize1"]);
-        $number = $datatoarray[$huay]["prize1"];
-        @$number2 = $datatoarray[$huay]["prize2"][0];
-        if (!empty($number) and !empty($number2)) {
-            $prize1  = array_map('intval', str_split($datatoarray[$huay]["prize1"]));
+        // $number = $datatoarray[$huay]["prize1"];
+        // @$number2 = $datatoarray[$huay]["prize2"][0];
+        $number = $thaiLotto["data"][0]["data"][0]["FirstPrize"];
+        $number2 = $thaiLotto["data"][0]["data"][0]["ThreeFront"];
+        $number3 = $thaiLotto["data"][0]["data"][0]["ThreeUnder"];
+        $number4 = $thaiLotto["data"][0]["data"][0]["TwoUnder"];
+        // @$number2 = $thaiLotto["data"]["prize2"][0];
+        if (!empty($number)) {
+            // if (!empty($number) and !empty($number2)) {
+            $prize1  = array_map('intval', str_split($number));
+            $prize2  = array_map('intval', str_split($number2));
+            $prize3  = array_map('intval', str_split($number3));
+            $prize4  = array_map('intval', str_split($number4));
+            // print_r($prize1);
+            // print_r($prize2);
+            // print_r($prize3);
+            // print_r($prize4);
 
 ?>
             <div class="col-12">
@@ -25,14 +43,14 @@ if (isset($_GET['lotto'])) {
                 <p id="3front" class="huay-title-in-card lang">3ตัวหน้า</p>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
-                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-1" src="assets/img/number/num-<?= $prize2[0] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-<?= $prize2[1] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-<?= $prize2[2] ?>.png" alt="" style="width: 30px; height: 100%">
                     </div>
                     <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
-                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-1" src="assets/img/number/num-<?= $prize2[4] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-<?= $prize2[5] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-<?= $prize2[6] ?>.png" alt="" style="width: 30px; height: 100%">
                     </div>
                 </div>
             </div>
@@ -40,14 +58,14 @@ if (isset($_GET['lotto'])) {
                 <p id="3last" class="huay-title-in-card lang">3ตัวท้าย</p>
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
-                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-1" src="assets/img/number/num-<?= $prize3[0] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-<?= $prize3[1] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-<?= $prize3[2] ?>.png" alt="" style="width: 30px; height: 100%">
                     </div>
                     <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center">
-                        <img id="th-3-1-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-3-1-3" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-1" src="assets/img/number/num-<?= $prize3[4] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-2" src="assets/img/number/num-<?= $prize3[5] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-3-1-3" src="assets/img/number/num-<?= $prize3[6] ?>.png" alt="" style="width: 30px; height: 100%">
                     </div>
                 </div>
                 </div>
@@ -56,8 +74,8 @@ if (isset($_GET['lotto'])) {
                 <p id="2last" class="huay-title-in-card lang">เลขท้าย2</p>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <img id="th-2-1" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
-                        <img id="th-2-2" src="assets/img/number/num-0.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-2-1" src="assets/img/number/num-<?= $prize4[0] ?>.png" alt="" style="width: 30px; height: 100%">
+                        <img id="th-2-2" src="assets/img/number/num-<?= $prize4[1] ?>.png" alt="" style="width: 30px; height: 100%">
                     </div>
                 </div>
             </div>
