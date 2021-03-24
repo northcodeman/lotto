@@ -77,7 +77,7 @@ include("include/navbar.php")
 				</div>
 				<div class="row ser_cnt text-center">
 					<div class="col-lg-12 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-thai.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -104,7 +104,7 @@ include("include/navbar.php")
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-lao.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -131,7 +131,7 @@ include("include/navbar.php")
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-lao-vip.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -158,7 +158,7 @@ include("include/navbar.php")
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-star.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -185,7 +185,7 @@ include("include/navbar.php")
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-hanoi.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -212,7 +212,7 @@ include("include/navbar.php")
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-hanoi-s.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -239,7 +239,7 @@ include("include/navbar.php")
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-hanoi-vip.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
@@ -267,7 +267,7 @@ include("include/navbar.php")
 					</div>
 
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-malay.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
