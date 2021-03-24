@@ -158,7 +158,7 @@ include("include/navbar.php")
 						</a>
 					</div>
 					<div class="col-lg-6 col-md-12 col-xs-12 serv ">
-						<a href="result-huay/huay-star.php" style="text-decoration: none;color:unset;">
+						<a href="result-huay/huay-lao-star.php" style="text-decoration: none;color:unset;">
 							<div class="card" style="padding:15px">
 								<div class="row head-huay-card">
 									<div class="col-4 text-center" style="vertical-align: middle">
