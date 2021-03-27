@@ -326,10 +326,6 @@ include("include/navbar.php")
 			</div>
 		</section>
 
-		<div>
-			<img src="assets/img/ads.gif" alt="" class="w-100 my-2">
-		</div>
-
 	</div>
 
 	<div id="successModal" class="modal fade">
