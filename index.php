@@ -296,7 +296,9 @@ include("include/navbar.php")
 				</div>
 			</div>
 		</section>
-
+		<div>
+			<img src="assets/img/ads.gif" alt="" class="w-100 my-2">
+		</div>
 		<section id="projects">
 			<div class="container">
 				<div class="row">

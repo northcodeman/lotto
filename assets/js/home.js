@@ -82,25 +82,26 @@ function showLottoDate() {
                     } else if (lotto.name == "หวยฮานอยVIP") {
                         document.getElementById('date-hanoi-vip').innerHTML = lotto.date
                         
-                    } else if (lotto.name == "หวยฮานอยพิเศษ") {
-                        document.getElementById('date-hanoi-s').innerHTML = lotto.date
+                    // } else if (lotto.name == "หวยฮานอยพิเศษ") {
+                    //     document.getElementById('date-hanoi-s').innerHTML = lotto.date
                        
                     } else if (lotto.name == "หวยฮานอย") {
                         document.getElementById('date-hanoi').innerHTML = lotto.date
                         
-                    } else if (lotto.name == "หวยลาว") {
+                    } 
+                    // else if (lotto.name == "หวยลาว") {
 
-                        document.getElementById('date-lao').innerHTML = lotto.date
+                    //     document.getElementById('date-lao').innerHTML = lotto.date
 
-                    } else if (lotto.name == "หวยลาวสตาร์") {
+                    // } else if (lotto.name == "หวยลาวสตาร์") {
 
-                        document.getElementById('date-lao-star').innerHTML = lotto.date
+                    //     document.getElementById('date-lao-star').innerHTML = lotto.date
 
-                    } else if (lotto.name == "หวยลาว VIP") {
+                    // } else if (lotto.name == "หวยลาว VIP") {
 
-                        document.getElementById('date-lao-vip').innerHTML = lotto.date
+                    //     document.getElementById('date-lao-vip').innerHTML = lotto.date
 
-                    }
+                    // }
                 });
                 $.ajax({
                     type: "GET",
@@ -164,6 +165,42 @@ function showLottoDate() {
         }
     })
 
+    request("apilast.php?huay=lao", (lottoList) => {
+        // console.log('data : ', lottoList)
+
+        if (lottoList !== null) {
+            document.getElementById('date-lao').innerHTML = lottoList.date
+        } else {
+            console.log('lottoList Error', lottoList)
+        }
+    })
+    request("apilast.php?huay=lao_star", (lottoList) => {
+        // console.log('data : ', lottoList)
+
+        if (lottoList !== null) {
+            document.getElementById('date-lao-star').innerHTML = lottoList.date
+        } else {
+            console.log('lottoList Error', lottoList)
+        }
+    })
+    request("apilast.php?huay=lao_vip", (lottoList) => {
+        // console.log('data : ', lottoList)
+
+        if (lottoList !== null) {
+            document.getElementById('date-lao-vip').innerHTML = lottoList.date
+        } else {
+            console.log('lottoList Error', lottoList)
+        }
+    })
+    request("apilast.php?huay=hanoy_special", (lottoList) => {
+        // console.log('data : ', lottoList)
+
+        if (lottoList !== null) {
+            document.getElementById('date-hanoi-s').innerHTML = lottoList.date
+        } else {
+            console.log('lottoList Error', lottoList)
+        }
+    })
 }
 
 function getStockData() {
