@@ -103,6 +103,32 @@ class api_huayNew {
         return $result;
     }
 
+    public function thai(){ // หวยไทย
+        $content = file_get_html('https://www.ruay.info/%e0%b8%95%e0%b8%a3%e0%b8%a7%e0%b8%88%e0%b8%ab%e0%b8%a7%e0%b8%a2%e0%b8%a3%e0%b8%b1%e0%b8%90%e0%b8%9a%e0%b8%b2%e0%b8%a5/');
+        $finddate = $content->find('div[class=elementor-text-editor elementor-clearfix] table tbody tr td span span', 0)->plaintext;
+        $explode = explode(" ", $finddate);
+        $explode = explode("/", $explode[1]);
+        $mapEx = $explode[0]."-".$explode[1]."-25".$explode[2];
+        $FirstPrize = $content->find('div[class=elementor-text-editor elementor-clearfix] table tbody tr td span span', 1)->plaintext;
+        $explodeThreeFront = explode("  | ", $content->find('div[class=elementor-text-editor elementor-clearfix] table tbody tr td span span', 3)->plaintext);
+        $ThreeFront = $explodeThreeFront[0] .",".$explodeThreeFront[1];
+        $explodeThreeBack = explode("  | ", $content->find('div[class=elementor-text-editor elementor-clearfix] table tbody tr td span span', 6)->plaintext);
+        $ThreeBack = $explodeThreeBack[0] .",".$explodeThreeBack[1];
+        $Two = $content->find('div[class=elementor-text-editor elementor-clearfix] table tbody tr td span span', 9)->plaintext;
+        $data = array(
+            'title'=> "หวยไทย",
+            'date'=> $this->thai_date_fullmonth(strtotime($mapEx."-543 YEARS")),
+            'data'=> array([
+                    'FirstPrize'=> trim($FirstPrize),
+                    'ThreeFront'=> trim($ThreeFront),
+                    'ThreeBack'=> trim($ThreeBack),
+                    'Two'=> trim($Two),
+                ])
+            );
+        $result = json_encode($data, JSON_UNESCAPED_UNICODE);
+        return $result;
+    }
+
 
 }
 
@@ -119,11 +145,14 @@ if(isset($_GET['huay'])){
         
     } elseif($_GET['huay'] == "hanoy_special"){
         echo $lao->hanoy_special();
+    } elseif($_GET['huay'] == "thai"){
+        echo $lao->thai();
 
     } else {
         echo json_encode(
             array(
                 "huay"=>array(
+                    "thai",
                     "lao",
                     "lao_vip",
                     "lao_star",

@@ -3,10 +3,11 @@ include('apilast.php');
 
 if (isset($_GET['lotto'])) {
     $datatoarray = json_decode(file_get_contents("https://www.bauto28.com/latest-date.php"), true);
-    $thaiLotto = json_decode(file_get_contents("http://154.16.7.192/data.php"), true);
+    // $thaiLotto = json_decode(file_get_contents("http://154.16.7.192/data.php"), true);
     // $laostar = file_get_contents("apilast.php?huay=lao_star");
 
     $huay = new api_huayNew;
+    $huaythai = json_decode($huay->thai(), true);
     $huaylao = json_decode($huay->lao(), true);
     $huaylaostar = json_decode($huay->lao_star(), true);
     $huaylaovip = json_decode($huay->lao_vip(), true);
@@ -20,10 +21,10 @@ if (isset($_GET['lotto'])) {
         // print_r($datatoarray[$huay]["prize1"]);
         // $number = $datatoarray[$huay]["prize1"];
         // @$number2 = $datatoarray[$huay]["prize2"][0];
-        $number = $thaiLotto["data"][0]["data"][0]["FirstPrize"];
-        $number2 = $thaiLotto["data"][0]["data"][0]["ThreeFront"];
-        $number3 = $thaiLotto["data"][0]["data"][0]["ThreeUnder"];
-        $number4 = $thaiLotto["data"][0]["data"][0]["TwoUnder"];
+        $number = $huaythai["data"][0]["FirstPrize"];
+        $number2 = $huaythai["data"][0]["ThreeFront"];
+        $number3 = $huaythai["data"][0]["ThreeBack"];
+        $number4 = $huaythai["data"][0]["Two"];
         // @$number2 = $thaiLotto["data"]["prize2"][0];
         if (!empty($number)) {
             // if (!empty($number) and !empty($number2)) {
